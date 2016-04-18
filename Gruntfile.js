@@ -3,13 +3,13 @@
 var request = require('request');
 var fs = require('fs');
 var tabletop = require('tabletop');
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1QkkIRF-3Qrz-aRIxERbGbB7YHWz2-t4ix-7TEcuBNfE/pubhtml?gid=1823583981&single=true';
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-CvUisj_21LEjfvU1QaHK3ZtEmrwquZhjDSekSMNO7A/pubhtml';
 
 var current_branch = 'gh-pages';
 
 function functiontofindIndexByKeyValue(arraytosearch, key, valuetosearch) {
     for (var i = 0; i < arraytosearch.length; i++) {
- 
+
         if (arraytosearch[i][key] == valuetosearch) {
         return i;
         }
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           },
           files: [
             {
-              src: ["_data/categories_by_macro.json","_data/data_categories.json", "_data/macro_areas.json",  "_data/totales.json"],
+              src: ["_data/analisis.json","_data/cumplimientos.json"],
               expand: true,
             }
           ]
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             force: true
           },
           files: {
-              src: ["_data/categories_by_macro.json","_data/data_categories.json", "_data/macro_areas.json",  "_data/totales.json"],
+              src: ["_data/analisis.json","_data/cumplimientos.json"],
           }
         }
       },
@@ -64,86 +64,49 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
 
   // Default task.
-    grunt.registerTask('UpdateData', 'Va a buscar las cosas a google docs y las deja en un json', function() {
-        var done = this.async();
-        function showInfo(data, tabletop){console.log(tabletop.models.promesas.elements)}
+    grunt.registerTask('UpdateData', 'Va a buscar las cosas a google docs y las deja en un json ◕‿◕', function() {
+      var done = this.async();
+      var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop) {
 
-        var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop){
-            var all_promises = tabletop.models.promesas.elements;
-            var totales = []
+        /*cumplimientos*/
+        var all_cumplimientos = tabletop.models.cumplimiento.elements;
+        var cumplimientos = []
 
-            /**
-            Get Totales
-            **/
-            var totales_counter = 1;
-            for (var i=0; i < all_promises.length; i++){
-                if(functiontofindIndexByKeyValue(totales, "macro_area", all_promises[i].macro_area) == -1){
-
-                    totales.push({
-                        "id": totales_counter,
-                        "macro_area": all_promises[i].macro_area,
-                        "quality_macro_area": all_promises[i].quality_macro_area,
-                        "fulfillment_macro_area": Number((all_promises[i].fulfillment_macro_area * 100).toFixed(1))
-                    })
-                    totales_counter++;
-                }
-                
-            }
-            grunt.file.write("_data/totales.json", JSON.stringify(totales, null, 4))
-
-            /**
-            Get Macro Areas
-            **/
-
-            var macro_areas = []
-            var macro_areas_counter = 0;
-            for (var i=0; i < all_promises.length; i++){
-                if(functiontofindIndexByKeyValue(macro_areas, "macro_area", all_promises[i].macro_area) == -1){
-                    macro_areas.push({
-                        "id":macro_areas_counter,
-                        "macro_area": all_promises[i].macro_area,
-                        "quality_macro_area": all_promises[i].quality_macro_area,
-                        "fulfillment_macro_area": Number((all_promises[i].fulfillment_macro_area * 100).toFixed(1))
-                    })
-                    macro_areas_counter++;
-                }
-            }
-            var data_string = JSON.stringify(macro_areas, null, 4);
-            grunt.file.write("_data/macro_areas.json", data_string)
-
-            /**
-            Get Categories and promises
-            **/
-            var macro_areas = []
-            var data = all_promises
-            var macro_categories = {};
-            var data_categories = {};
-            for(var i=0; i < data.length; i ++){
-                var promise = data[i];
-                if(Object.keys(macro_categories).indexOf(promise.macro_area) == -1){
-                    macro_categories[promise.macro_area] = []
-                }
-                if(Object.keys(data_categories).indexOf(promise.category) == -1){
-                    data_categories[promise.category] = []
-                }
-                if(functiontofindIndexByKeyValue(macro_categories[promise.macro_area], "category", promise.category) == -1){
-                    macro_categories[promise.macro_area].push({"category": promise.category})
-                }
-                data_categories[promise.category].push(promise)
-
-            }
-            var data_categories_as_string = JSON.stringify(data_categories, null, 4);
-            var data_string = JSON.stringify(macro_categories, null, 4);
-            grunt.file.write("_data/categories_by_macro.json", data_string)
-            grunt.file.write("_data/data_categories.json", data_categories_as_string)
-            
-            done()
+        for (var i=0; i < all_cumplimientos.length; i++){
+          if( all_cumplimientos[i].area !== 'TOTAL' ) {
+            cumplimientos.push({
+              "area": all_cumplimientos[i].area,
+              "total": all_cumplimientos[i].total,
+              "nota": all_cumplimientos[i].nota
+            })
+          }
         }
-        , simpleSheet: true})
 
+        /*analisis*/
+        var all_analisis = tabletop.models.analisis.elements;
+        var analisis = []
 
+        for (var i=0; i < all_analisis.length; i++){
+          if( all_analisis[i].area !== '' ) {
+            analisis.push({
+              "id": all_analisis[i].uid,
+              "area": all_analisis[i].area,
+              "promesa": all_analisis[i].promesa,
+              "cumplimiento_total": all_analisis[i].cumplimiento_total,
+              "coherencia_total": all_analisis[i].coherencia_total
+            })
+          }
+        }
+
+        /*save files*/
+        grunt.file.write("_data/cumplimientos.json", JSON.stringify(cumplimientos, null, 4));
+        grunt.log.ok("_data/cumplimientos.json")
+        grunt.file.write("_data/analisis.json", JSON.stringify(analisis, null, 4));
+        grunt.log.ok("_data/analisis.json")
+      }, simpleSheet: true})
     });
-    grunt.registerTask("UpdateEverything", ['UpdateData', 'gitadd', 'gitcommit', 'gitpull', 'gitpush'])
-    
+
+    grunt.registerTask("default", ['UpdateData', 'gitadd', 'gitcommit', 'gitpull', 'gitpush'])
+
 
 };

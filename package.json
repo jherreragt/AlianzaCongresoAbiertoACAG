@@ -1,6 +1,6 @@
 {
-  "name": "observatorio",
-  "version": "0.0.0",
+  "name": "observatorio-21-05-16",
+  "version": "0.0.1",
   "description": "Observatorio AntiCorrupcion",
   "main": "Gruntfile.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ciudadanointeligente/observatorio.git"
+    "url": "git://github.com/ciudadanointeligente/observatorio-21-05-16.git"
   },
   "author": "",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/ciudadanointeligente/observatorio/issues"
+    "url": "https://github.com/ciudadanointeligente/observatorio-21-05-16/issues"
   },
   "dependencies": {
     "grunt": "~0.4.5",
