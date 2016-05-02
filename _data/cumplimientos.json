@@ -1,27 +1,78 @@
 [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
+    {
+        "area": "Agricultura",
+        "total": "0%"
+    },
+    {
+        "area": "Ciencia y Tecnología",
+        "total": "0%"
+    },
+    {
+        "area": "Cultura y Patrimonio",
+        "total": "20%"
+    },
+    {
+        "area": "Democracia",
+        "total": "85%"
+    },
+    {
+        "area": "Desarrollo social",
+        "total": "0%"
+    },
+    {
+        "area": "Economía",
+        "total": "45%"
+    },
+    {
+        "area": "Educación",
+        "total": "73%"
+    },
+    {
+        "area": "Energía",
+        "total": "60%"
+    },
+    {
+        "area": "Equidad de Género",
+        "total": "70%"
+    },
+    {
+        "area": "Estado ",
+        "total": "60%"
+    },
+    {
+        "area": "Infancia y Juventud",
+        "total": "40%"
+    },
+    {
+        "area": "Justicia y DDHH",
+        "total": "51%"
+    },
+    {
+        "area": "Medio Ambiente",
+        "total": "40%"
+    },
+    {
+        "area": "Mineria",
+        "total": "0%"
+    },
+    {
+        "area": "Obras Públicas",
+        "total": "40%"
+    },
+    {
+        "area": "Pueblos originarios",
+        "total": "40%"
+    },
+    {
+        "area": "Salud",
+        "total": "0%"
+    },
+    {
+        "area": "Trabajo y Previsión Social",
+        "total": "98%"
+    },
+    {
+        "area": "Vivienda y Urbanismo",
+        "total": "40%"
+    }
 ]
