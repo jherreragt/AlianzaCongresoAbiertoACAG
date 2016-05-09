@@ -139,7 +139,7 @@ section {
 }
 
 .sticky .brand {
-  background: url(../img/logo-color.png) no-repeat;
+  background: url(../img/logo-ddah.png) no-repeat;
   width: 185px;
   height: 53px;
 }
@@ -925,7 +925,7 @@ i.fa.fa-link{
 
 
 .visual-main {
-  background-color: $grey-lighter;
+  background-color: $blue;
   margin-bottom: 10px;
   padding: 20px;
 }
@@ -934,7 +934,7 @@ i.fa.fa-link{
 /*FOOTER*/
 
 footer {
-  background: #093847;
+  background: $blue-dark;
   color: $grey-light;
   margin-top: 140px;
   padding: 75px 0 50px;
@@ -948,7 +948,7 @@ footer a {
 footer img {
   max-width: 220px;
 }
-
+*/
 footer:after {
   content: url(../img/lampara-footer.png);
   position: absolute;
@@ -962,7 +962,7 @@ footer:before {
   right: 0;
   bottom: 0;
 }
-
+/*
 
 footer .col-md-4{
   text-align: right;
