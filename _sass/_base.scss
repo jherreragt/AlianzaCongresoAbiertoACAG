@@ -1,5 +1,5 @@
 body {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $grey;
@@ -204,10 +204,11 @@ section {
  */
 
 h1 {
+
 }
 
 h2 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #424753;
   font-size: 28px;
 }
@@ -925,7 +926,7 @@ i.fa.fa-link{
 
 
 .visual-main {
-  background-color: $blue;
+  background-color: $grey-lighter;
   margin-bottom: 10px;
   padding: 20px;
 }
