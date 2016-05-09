@@ -207,13 +207,15 @@ section {
  */
 
 h1 {
-
+  font-weight:600;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  color: #424753;
-  font-size: 28px;
+  color: $blue;
+  font-weight:600;
+  font-size: 18px;
+  text-align:center;
 }
 
 h3 {
