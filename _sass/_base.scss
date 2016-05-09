@@ -104,12 +104,12 @@ section {
 }
 
 .sticky .navbar-nav > li > a {
-  color: $grey-light;
+  color: write;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-  color: $grey;
-  border-bottom: 2px solid $yellow;
+  color: $cian;
+  border-bottom: 2px solid $cian;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
