@@ -42,9 +42,9 @@ section {
 .header-menu {
   position: absolute;
     width: 100%;
-    margin-top: 10px;
     padding: 0 15px;
     z-index: 55;
+    
 }
 
 .header-menu.sticky {
@@ -60,11 +60,13 @@ section {
   -moz-animation: bounceIn 0.5s;
   -webkit-animation: bounceIn 0.5s;
   animation: bounceIn 0.5s;
+  background-color:$blue;
+  padding-top:15px;
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
-  margin-top: 12px;
-  margin-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 15px;
 }
 
 .navbar-toggle {
@@ -140,14 +142,15 @@ section {
 
 .sticky .brand {
   background: url(../img/logo-ddah.png) no-repeat;
-  width: 185px;
-  height: 53px;
+  height: 27px;
+  width: 243px;
 }
 
 .fixed .brand {
   background: url(../img/logo-ddah.png) no-repeat;
   height: 27px;
   width: 243px;
+  margin-top:15px;
 }
 
 
@@ -949,7 +952,7 @@ footer a {
 footer img {
   max-width: 220px;
 }
-*/
+/*
 footer:after {
   content: url(../img/lampara-footer.png);
   position: absolute;
@@ -963,7 +966,7 @@ footer:before {
   right: 0;
   bottom: 0;
 }
-/*
+*/
 
 footer .col-md-4{
   text-align: right;
