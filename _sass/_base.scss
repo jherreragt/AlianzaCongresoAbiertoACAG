@@ -1,8 +1,8 @@
 body {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $grey;
+  color: $blue;
 }
 
 p {
@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: $orange;
+  color: $cian;
 }
 
 section {
@@ -42,9 +42,9 @@ section {
 .header-menu {
   position: absolute;
     width: 100%;
-    margin-top: 10px;
     padding: 0 15px;
     z-index: 55;
+    
 }
 
 .header-menu.sticky {
@@ -60,11 +60,13 @@ section {
   -moz-animation: bounceIn 0.5s;
   -webkit-animation: bounceIn 0.5s;
   animation: bounceIn 0.5s;
+  background-color:$blue;
+  padding-top:15px;
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
-  margin-top: 12px;
-  margin-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 15px;
 }
 
 .navbar-toggle {
@@ -102,12 +104,12 @@ section {
 }
 
 .sticky .navbar-nav > li > a {
-  color: $grey-light;
+  color: write;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-  color: $grey;
-  border-bottom: 2px solid $yellow;
+  color: $cian;
+  border-bottom: 2px solid $cian;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
@@ -139,15 +141,16 @@ section {
 }
 
 .sticky .brand {
-  background: url(../img/logo-color.png) no-repeat;
-  width: 185px;
-  height: 53px;
+  background: url(../img/logo-ddah.png) no-repeat;
+  height: 27px;
+  width: 243px;
 }
 
 .fixed .brand {
-  background: url(../img/logo.png) no-repeat;
-  height: 53px;
-  width: 185px;
+  background: url(../img/logo-ddah.png) no-repeat;
+  height: 27px;
+  width: 243px;
+  margin-top:15px;
 }
 
 
@@ -204,12 +207,15 @@ section {
  */
 
 h1 {
+  font-weight:600;
 }
 
 h2 {
-  font-family: 'Merriweather Sans', sans-serif;
-  color: #424753;
-  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  color: $blue;
+  font-weight:600;
+  font-size: 18px;
+  text-align:center;
 }
 
 h3 {
@@ -243,7 +249,7 @@ h5 {
 
 .destacado {
   font-size: 16px;
-  color: #646975;
+  color: $blue;
   margin-bottom: 20px;
   font-weight: 200;
 }
@@ -419,12 +425,12 @@ p.text-center.note{
 }
 
 .btn-primary {
-  background-color: white;
-  color: $orange;
+  background-color: $cian;
+  color: write;
 }
 
 .btn-primary:hover{
-  background: $yellow;
+  background: $blue;
 }
 
 .btn-info {
@@ -934,21 +940,21 @@ i.fa.fa-link{
 /*FOOTER*/
 
 footer {
-  background: #093847;
-  color: $grey-light;
+  background: $blue-dark;
+  color: white;
   margin-top: 140px;
   padding: 75px 0 50px;
   position: relative;
 }
 
 footer a {
-  /*color: $red;*/
+  color: white;
 }
 
 footer img {
   max-width: 220px;
 }
-
+/*
 footer:after {
   content: url(../img/lampara-footer.png);
   position: absolute;
@@ -962,7 +968,7 @@ footer:before {
   right: 0;
   bottom: 0;
 }
-
+*/
 
 footer .col-md-4{
   text-align: right;
