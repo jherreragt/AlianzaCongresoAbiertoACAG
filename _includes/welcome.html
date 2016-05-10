@@ -2,53 +2,12 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
-          <h1>Sigue aquí el avance del Consejo Anticorrupción</h1>
-          <p>El Observatorio Anticorrupción, conformado por Espacio Público y Ciudadano Inteligente, sigue el debate y el avance de las medidas propuestas por el Consejo Asesor Presidencial para lograr una mayor probidad y transparencia en Chile.</p>
-        </div>
-        <div class="col-md-3 chart-total">
-          <p class="totalbajada">de avance</p>
-          <p class="textototal">Del total de las propuestas</p>
-        </div>
-        <div class="col-md-2">
-            <div class="text-center ct-label">{{ site.final_mark }}</div>
-          <p class="notatotal">Nota de calidad</p>
-        </div>
+
       </div>
-      <div class="col-md-12">
         <div class="row">
-          <div class="text-right">
-            <ul class="list-inline">
-              <li>
-                <a href="{{ site.baseurl }}cumplimiento.html" class="btn btn-primary btn-lg">Revisa el cumplimiento</a>
-              </li>
-            </ul>
-          </div>
 
-          <div class="col-md-2 redes">
-            <ul class="list-unstyled list-inline">
-              <li class="redes">
-                <a href="#" onclick="window.open(&quot;//twitter.com/share?url=http://observatorioanticorrupcion.cl/&amp;via=ciudadanoi y @EsPublicoCL&amp;text=Sigue el avance de las propuestas del Consejo Anticorrupción en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                  </span>
-                </a>
-              </li>
-
-              <li class="redes">
-                <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=http://observatorioanticorrupcion.cl/&quot;,&quot;facebook&quot;,&quot;width=450, height=250&quot;)">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                    <i class="fa fa-facebook fa-stack-1x"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
 
         </div>
-      </div>
     </div>
   </div>
 </div>
@@ -66,7 +25,7 @@
           series: [{{c.total | remove: '%' }}, 100]
         }, {
           donut: true,
-          donutWidth: 40,
+          donutWidth: 12,
           startAngle: 0,
           total: 100,
           showLabel: false

@@ -3,24 +3,76 @@ layout: page
 ---
 <div class="container">
   <section id="fulfillment">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Área</th>
-          <th>Promesa</th>
-          <th>Cumplimiento</th>
-        </tr>
-      </thead>
-      <tbody>
-      {% assign analisis = site.data.analisis | order_by:area %}
-      {% for a in analisis %}
-        <tr>
-          <td>{{ a.area }}</td>
-          <td>{{ a.promesa }}</td>
-          <td>{{ a.cumplimiento_total }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+
+    <div class="panel-heading">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Categorías</h2>
+        </div>
+        <div class="col-md-4">
+          <h2>Porcentaje de avance</h2>
+        </div>
+        <div class="col-md-4">
+          <h2>Escala de coherencia </h2>
+          <h3>(1 a 4)</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+          <div class="panel panel-default" ng-repeat="p in analisis.promisses">
+            <div class="panel-heading" role="tab" id="headingOne-[[p.id]]">
+              <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne-[[p.id]]" aria-expanded="false" aria-controls="collapseOne-[[p.id]]">
+                      [[p.category]]
+                    </a>
+                  </h4>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="[[p.cumplimiento_total]]" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: [[p.cumplimiento_total]]%;">
+                      [[p.cumplimiento_total]]%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4">[[p.coherencia_total]]</div>
+              </div>
+            </div>
+
+            <div id="collapseOne-[[p.id]]" ng-class='{in:$first}' class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-[[p.id]]">
+              <div class="panel-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Promesa</th>
+                      <th>Porcentaje de avance</th>
+                      <th>Escala de coherencia (1 a 4)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="data in p.data">
+                      <td>[[data.promesa]]</td>
+                      <td>[[data.cumplimiento_total]]</td>
+                      <td>[[data.coherencia_total]]</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
   </section>
 </div>
