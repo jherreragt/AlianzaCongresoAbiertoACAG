@@ -250,9 +250,9 @@ small {
 
 #welcome {
     background-position: center;
-    background-position-y: -240px;
+    /*background-position-y: -240px;*/
     background-repeat: no-repeat;
-    max-height: 780px;
+    min-height: 780px;
     background-image: url(../img/header.png);
 }
 
