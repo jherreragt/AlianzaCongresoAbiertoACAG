@@ -2,20 +2,7 @@
 layout: default
 ---
 {% if site.launched %}
-{% include welcome.html %}
-
+  {% include welcome.html %}
 {% else %}
-<div id="welcome">
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Sigue aquí el avance del Consejo Anticorrupción</h1>
-          <p>Pero aún no estamos listos</p>
-          <p>El 6 de Noviembre estaremos al aire.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  {% include countdown.html %}
 {% endif %}

@@ -1,14 +1,11 @@
 # site settings
 title: 'DDAH - 21 Mayo 2016'
 email: prensa@ciudadanointeligente.org
-description: 'El Observatorio anticorrupción, conformado por Espacio Público y Ciudadano Inteligente, sigue el debate y el avance de las medidas propuestas por la Comisión Engel para mayor probidad y transparencia.'
+description: 'Del dicho al hecho edición 21 de mayo 2016'
 baseurl: '//21052016.deldichoalhecho.cl/' # the subpath of your site, e.g. /blog/
 url: 'http://21052016.deldichoalhecho.cl/' # the base hostname & protocol for your site
 analytics: 'UA-xxxxxxxx-x' # google analytics tracking code
 twitter_username: ciudadanoi
-launched: true
+launched: false
 # build settings
 markdown: kramdown
-# notas y cosas finales
-final_mark: 4.3
-final_percentage: 55

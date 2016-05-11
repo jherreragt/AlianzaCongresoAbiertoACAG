@@ -44,7 +44,7 @@ section {
     width: 100%;
     padding: 0 15px;
     z-index: 55;
-    
+
 }
 
 .header-menu.sticky {
@@ -206,37 +206,16 @@ section {
  * Headings
  */
 
-h1 {
-  font-weight:600;
-}
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
   color: $blue;
-  font-weight:600;
-  font-size: 18px;
-  text-align:center;
-}
-
-h3 {
-    font-weight: 900;
 }
 
 h4 {
   color: $grey;
-  width: initial;
-  text-align: initial;
-  font-family: inherit;
-  color: initial;
-  font-size: 20px;
-  font-weight: 700;
-  padding: initial;
-  background: initial;
 }
 
 h5 {
-  font-size: 14px;
-  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -326,7 +305,7 @@ p.text-center.note{
   margin-top: -3px;
 }
 
-.col-xs-6{
+/*.col-xs-6{
   height: 300px;
 }
 .col-xs-12{
@@ -336,7 +315,7 @@ p.text-center.note{
 
 .col-xs-12.vcenter{
   margin-bottom: -130px;
-}
+}*/
 
 #welcome .ct-series-a .ct-slice-donut {
   stroke: $yellow;
