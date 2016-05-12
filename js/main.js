@@ -12,9 +12,4 @@ app.controller('cumplimientoController', function($scope,$http){
       .error(function (){
         $scope.messages = { response: false, message: 'no org loaded' }
       });
-
-  $scope.getInfo = function(area){
-    $scope.area = area;
-  }
-
 });
