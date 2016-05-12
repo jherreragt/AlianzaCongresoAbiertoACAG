@@ -363,6 +363,17 @@ p.text-center.note{
 }
 
 /**
+ * Countdown
+ */
+ .image-countdown{
+    background-image: url(../img/header2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 780px;
+    margin-bottom:-230px;
+ }
+
+/**
  * Buttons
  */
 .btn{
