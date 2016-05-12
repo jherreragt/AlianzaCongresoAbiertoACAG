@@ -4,7 +4,7 @@
             "id": 1,
             "category": "Agricultura",
             "cumplimiento_total": 0,
-            "coherencia_total": 1,
+            "coherencia_total": "1.0",
             "status": {
                 "completas": 0,
                 "incompletas": 0,
@@ -25,7 +25,7 @@
             "id": 2,
             "category": "Ciencia y Tecnología",
             "cumplimiento_total": 0,
-            "coherencia_total": 1,
+            "coherencia_total": "1.0",
             "status": {
                 "completas": 0,
                 "incompletas": 0,
@@ -46,7 +46,7 @@
             "id": 3,
             "category": "Cultura y Patrimonio",
             "cumplimiento_total": 20,
-            "coherencia_total": 2.5,
+            "coherencia_total": "2.5",
             "status": {
                 "completas": 0,
                 "incompletas": 1,
@@ -75,7 +75,7 @@
             "id": 4,
             "category": "Democracia",
             "cumplimiento_total": 85,
-            "coherencia_total": 3.5,
+            "coherencia_total": "3.5",
             "status": {
                 "completas": 3,
                 "incompletas": 1,
@@ -120,7 +120,7 @@
             "id": 5,
             "category": "Desarrollo social",
             "cumplimiento_total": 0,
-            "coherencia_total": 1,
+            "coherencia_total": "1.0",
             "status": {
                 "completas": 0,
                 "incompletas": 0,
@@ -140,8 +140,8 @@
         {
             "id": 6,
             "category": "Economía",
-            "cumplimiento_total": 52.5,
-            "coherencia_total": 3.25,
+            "cumplimiento_total": 53,
+            "coherencia_total": "3.3",
             "status": {
                 "completas": 0,
                 "incompletas": 6,
@@ -217,8 +217,8 @@
         {
             "id": 7,
             "category": "Educación",
-            "cumplimiento_total": 73.33333333333333,
-            "coherencia_total": 3.1666666666666665,
+            "cumplimiento_total": 73,
+            "coherencia_total": "3.2",
             "status": {
                 "completas": 4,
                 "incompletas": 1,
@@ -279,7 +279,7 @@
             "id": 8,
             "category": "Energía",
             "cumplimiento_total": 60,
-            "coherencia_total": 3.25,
+            "coherencia_total": "3.3",
             "status": {
                 "completas": 1,
                 "incompletas": 2,
@@ -324,7 +324,7 @@
             "id": 9,
             "category": "Equidad de Género",
             "cumplimiento_total": 70,
-            "coherencia_total": 4,
+            "coherencia_total": "4.0",
             "status": {
                 "completas": 0,
                 "incompletas": 1,
@@ -345,7 +345,7 @@
             "id": 10,
             "category": "Estado",
             "cumplimiento_total": 60,
-            "coherencia_total": 3,
+            "coherencia_total": "3.0",
             "status": {
                 "completas": 0,
                 "incompletas": 4,
@@ -398,7 +398,7 @@
             "id": 11,
             "category": "Infancia y Juventud",
             "cumplimiento_total": 40,
-            "coherencia_total": 4,
+            "coherencia_total": "4.0",
             "status": {
                 "completas": 0,
                 "incompletas": 1,
@@ -418,8 +418,8 @@
         {
             "id": 12,
             "category": "Justicia y DDHH",
-            "cumplimiento_total": 51.111111111111114,
-            "coherencia_total": 3.111111111111111,
+            "cumplimiento_total": 51,
+            "coherencia_total": "3.1",
             "status": {
                 "completas": 2,
                 "incompletas": 5,
@@ -504,7 +504,7 @@
             "id": 13,
             "category": "Medio Ambiente",
             "cumplimiento_total": 40,
-            "coherencia_total": 3,
+            "coherencia_total": "3.0",
             "status": {
                 "completas": 0,
                 "incompletas": 2,
@@ -533,7 +533,7 @@
             "id": 14,
             "category": "Mineria",
             "cumplimiento_total": 0,
-            "coherencia_total": 1,
+            "coherencia_total": "1.0",
             "status": {
                 "completas": 0,
                 "incompletas": 0,
@@ -554,7 +554,7 @@
             "id": 15,
             "category": "Obras Públicas",
             "cumplimiento_total": 40,
-            "coherencia_total": 4,
+            "coherencia_total": "4.0",
             "status": {
                 "completas": 0,
                 "incompletas": 1,
@@ -575,7 +575,7 @@
             "id": 16,
             "category": "Pueblos originarios",
             "cumplimiento_total": 20,
-            "coherencia_total": 2.5,
+            "coherencia_total": "2.5",
             "status": {
                 "completas": 0,
                 "incompletas": 1,
@@ -604,7 +604,7 @@
             "id": 17,
             "category": "Salud",
             "cumplimiento_total": 0,
-            "coherencia_total": 1,
+            "coherencia_total": "1.0",
             "status": {
                 "completas": 0,
                 "incompletas": 0,
@@ -625,7 +625,7 @@
             "id": 18,
             "category": "Trabajo y Previsión Social",
             "cumplimiento_total": 78,
-            "coherencia_total": 3,
+            "coherencia_total": "3.0",
             "status": {
                 "completas": 3,
                 "incompletas": 1,
@@ -678,7 +678,7 @@
             "id": 19,
             "category": "Vivienda y Urbanismo",
             "cumplimiento_total": 40,
-            "coherencia_total": 4,
+            "coherencia_total": "4.0",
             "status": {
                 "completas": 0,
                 "incompletas": 1,

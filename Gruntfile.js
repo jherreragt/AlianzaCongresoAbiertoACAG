@@ -124,8 +124,8 @@ module.exports = function(grunt) {
               coht = tmp_coht + coht ;
               final_coht = coht / tmp_y;
 
-              analisis.promisses[x].cumplimiento_total = final_ct;
-              analisis.promisses[x].coherencia_total = final_coht;
+              analisis.promisses[x].cumplimiento_total = Math.round(final_ct);
+              analisis.promisses[x].coherencia_total = final_coht.toFixed(1);
             }
           }
         }
