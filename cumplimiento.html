@@ -37,9 +37,9 @@ layout: page
                   <div>
                     [[p.data.length]] promesa(s)
                     <ul class="list-inline">
-                      <li>completas</li>
-                      <li>incompletas</li>
-                      <li>sin progreso</li>
+                      <li>[[p.status.completas]] completas</li>
+                      <li>[[p.status.incompletas]] incompletas</li>
+                      <li>[[p.status.sin_progreso]] sin progreso</li>
                     </ul>
                   </div>
                 </div>
@@ -50,13 +50,15 @@ layout: page
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-3 col-sm-2 col-md-2">[[p.coherencia_total]]</div>
+                <div class="col-xs-3 col-sm-2 col-md-2">
+                  [[p.coherencia_total]]
+                </div>
               </div>
             </div>
 
             <div id="collapseOne-[[p.id]]" ng-class='{in:$first}' class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-[[p.id]]">
               <div class="panel-body">
-                <table class="table">
+                <table class="table table-striped">
                   <thead>
                     <tr>
                       <th>Promesa</th>
@@ -67,11 +69,55 @@ layout: page
                   <tbody>
                     <tr ng-repeat="data in p.data">
                       <td>[[data.promesa]]</td>
-                      <td>[[data.cumplimiento_total]]</td>
-                      <td>[[data.coherencia_total]]</td>
+                      <td>
+                        <p>[[data.cumplimiento_total]]</p>
+                        <p>de avance</p>
+                        <p><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-cumplimiento-[[p.id]]-[[data.id]]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">[[data.cumplimiento_total]] de avance - ¿por qué?</h4>
+                              </div>
+                              <div class="modal-body">
+                                [[data.justificacion_avance]]
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </td>
+                      <td>
+                        <p>[[data.coherencia_total]]</p>
+                        <p>escala de coherencia</p>
+                        <p><a href="#" data-toggle="modal" data-target="#myModal-coherencia-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-coherencia-[[p.id]]-[[data.id]]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">[[data.coherencia_total]] escala de coherencia - ¿por qué?</h4>
+                              </div>
+                              <div class="modal-body">
+                                [[data.justificacion_nota]]
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
+
+
+
+
               </div>
             </div>
           </div>
