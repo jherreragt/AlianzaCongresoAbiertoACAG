@@ -8,12 +8,6 @@
             "data": [
                 {
                     "id": "1",
-                    "promesa": "Ingresaremos en septiembre al Congreso el esperado Estatuto que regula el trabajo de temporeros y temporeras, para asegurar su protección y la calidad del empleo.",
-                    "cumplimiento_total": "0%",
-                    "coherencia_total": "1"
-                },
-                {
-                    "id": "2",
                     "promesa": "Enviaremos el Proyecto de Ley que crea el Sistema Nacional de Inocuidad y Calidad Alimentaria y la Agencia Chilena para la Inocuidad y Calidad Alimentaria.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
@@ -27,7 +21,7 @@
             "coherencia_total": 1,
             "data": [
                 {
-                    "id": "3",
+                    "id": "2",
                     "promesa": "Estamos elaborando junto a la Comisión Asesora Presidencial una propuesta para crear un Ministerio de la Ciencia y Tecnología.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
@@ -41,13 +35,13 @@
             "coherencia_total": 2.5,
             "data": [
                 {
-                    "id": "4",
+                    "id": "3",
                     "promesa": "Estamos enviando una indicación sustitutiva al proyecto del nuevo Ministerio de las Culturas, las Artes y el Patrimonio. Este proyecto será enviado a este Congreso Nacional durante el segundo semestre.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "5",
+                    "id": "4",
                     "promesa": "Crearemos un nuevo canal de televisión cultural y educativo de recepción libre, gratuita y sin publicidad.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
@@ -61,25 +55,25 @@
             "coherencia_total": 3.5,
             "data": [
                 {
-                    "id": "6",
+                    "id": "5",
                     "promesa": "Estoy hablando de proyectos para perfeccionar la democracia, como el que hemos enviado en diciembre de 2014 a este Congreso y que regula el financiamiento de las campañas y de los partidos, estableciendo recursos públicos y equitativos para ello, eliminando las contribuciones de las empresas y limitando el aporte reservado de los privados.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "3"
                 },
                 {
-                    "id": "7",
+                    "id": "6",
                     "promesa": "Y estoy hablando de sanciones muy severas para quienes no cumplan esta normativa (financiamiento electoral), que contemplen incluso la pérdida del cargo.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "3"
                 },
                 {
-                    "id": "8",
+                    "id": "7",
                     "promesa": "Para fiscalizar bien esta ley firmé hace pocos días el proyecto de reforma constitucional que dará autonomía al Servel, con lo cual pasará a ser independiente del poder ejecutivo.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "9",
+                    "id": "8",
                     "promesa": "Enviamos un proyecto de reforma constitucional, que permite la elección directa y democrática de los Intendentes.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
@@ -93,7 +87,7 @@
             "coherencia_total": 1,
             "data": [
                 {
-                    "id": "10",
+                    "id": "9",
                     "promesa": "Enviaremos a este Congreso Nacional el proyecto de ley que crea la Subsecretaría de la Discapacidad.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
@@ -103,53 +97,53 @@
         {
             "id": 6,
             "category": "Economía",
-            "cumplimiento_total": 48.75,
+            "cumplimiento_total": 52.5,
             "coherencia_total": 3.25,
             "data": [
                 {
-                    "id": "11",
+                    "id": "10",
                     "promesa": "Enviaremos el segundo semestre a este Congreso un proyecto de ley para adaptar la Ley General de Bancos a estándares internacionales.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
                 },
                 {
-                    "id": "12",
+                    "id": "11",
                     "promesa": "En marzo pasado ingresamos el proyecto de ley que fortalece la libre competencia en los mercados. ",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "13",
+                    "id": "12",
                     "promesa": "Y enviaremos el proyecto de ley que fortalece la Superintendencia de Valores y Seguros.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "14",
+                    "id": "13",
                     "promesa": "Enviaremos el proyecto de ley que moderniza las ferias libres.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
                 },
                 {
-                    "id": "15",
+                    "id": "14",
                     "promesa": "Ingresamos ayer el proyecto de ley que regulariza el dominio de las caletas pesqueras, entregando su administración a pescadores artesanales.",
-                    "cumplimiento_total": "40%",
+                    "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "16",
+                    "id": "15",
                     "promesa": "Enviamos el Proyecto de Bonificación al cultivo y repoblamiento de Algas. ",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "17",
+                    "id": "16",
                     "promesa": "Hemos reformulado el proyecto que crea el Instituto Nacional de Desarrollo Sustentable de la Pesca Artesanal y la Acuicultura de Pequeña Escala.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "18",
+                    "id": "17",
                     "promesa": "Y sigue su discusión en el Congreso la ley que enviamos en 2014 de fortalecimiento del Sernac. Ella aumenta las multas a los infractores y obliga a la reparación íntegra de los daños causados a los consumidores, con una institucionalidad que dé garantías a todos.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
@@ -163,37 +157,37 @@
             "coherencia_total": 3.1666666666666665,
             "data": [
                 {
-                    "id": "19",
+                    "id": "18",
                     "promesa": "Y este año enviaremos el proyecto que creará los Servicios Locales de Educación, marcando el retorno de escuelas y liceos públicos a la administración del Ministerio de Educación.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "20",
+                    "id": "19",
                     "promesa": "Y esperamos que se apruebe pronto la ley que enviamos y que crea una Red de Centros de Formación Técnica públicos, nacidos al alero de universidades estatales, en cada una de las regiones del país.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "21",
+                    "id": "20",
                     "promesa": "Por eso, avanzando en nuestro compromiso de alcanzar la gratuidad para el 70 por ciento de los estudiantes más vulnerables de Chile al fin de mi período, a partir de 2016 aseguraremos que el 60 por ciento más vulnerable que asista a Centros de Formación Técnica, a Institutos Profesionales acreditados y sin fines de lucro, o a universidades del Consejo de Rectores, accedan a la gratuidad completa y efectiva, sin beca ni crédito. Esto beneficiará a casi 264 mil jóvenes.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "3"
                 },
                 {
-                    "id": "22",
+                    "id": "21",
                     "promesa": "Para ello presentaremos en el segundo semestre de este año una ley que abordará un nuevo marco de regulación, financiamiento y gratuidad de la Educación Superior que definirá claramente el camino para que ningún joven tenga que pagar.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
                 },
                 {
-                    "id": "23",
+                    "id": "22",
                     "promesa": "Y ya enviamos al Congreso el proyecto de ley que establece una nueva Política Nacional Docente. Este proyecto de ley va al corazón de la mejora de la calidad: los maestros y maestras",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "3"
                 },
                 {
-                    "id": "24",
+                    "id": "23",
                     "promesa": "Por eso hemos firmado los instructivos y los proyectos de ley para asegurar la reposición de la educación cívica y un programa de formación ciudadana en el sistema escolar.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "4"
@@ -207,25 +201,25 @@
             "coherencia_total": 3.25,
             "data": [
                 {
-                    "id": "25",
+                    "id": "24",
                     "promesa": "Enviaremos en el transcurso de este año, un proyecto de ley de Eficiencia Energética. Nuestro compromiso es lograr un ahorro energético a 2025 equivalente a lo que genera una central termoeléctrica.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
                 },
                 {
-                    "id": "26",
+                    "id": "25",
                     "promesa": "Además, enviamos al Congreso un proyecto de ley para que ENAP pueda desarrollar proyectos de generación, principalmente en geotermia, y sea un actor más relevante para el desarrollo de Chile.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "27",
+                    "id": "26",
                     "promesa": "Enviaremos un proyecto de ley que se hará cargo de las diferencias en tarifas eléctricas de los clientes residenciales para que nadie pague más de un diez por ciento del promedio de las cuentas a nivel nacional.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "28",
+                    "id": "27",
                     "promesa": "Y en junio próximo, enviaremos un proyecto de ley para incorporar un reconocimiento a todas las comunas que aportan de manera relevante a la generación de energía de la que nos beneficiamos todos los chilenos y chilenas.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
@@ -239,7 +233,7 @@
             "coherencia_total": 4,
             "data": [
                 {
-                    "id": "29",
+                    "id": "28",
                     "promesa": "Enviar al Parlamento un proyecto de ley que establece la posibilidad de interrumpir el embarazo en tres casos especialmente delicados.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
@@ -250,34 +244,34 @@
             "id": 10,
             "category": "Estado",
             "cumplimiento_total": 60,
-            "coherencia_total": 2.8,
+            "coherencia_total": 3,
             "data": [
                 {
-                    "id": "30",
+                    "id": "29",
                     "promesa": "Enviaremos en junio próximo un proyecto de ley de financiamiento y responsabilidad fiscal regional.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
                 },
                 {
-                    "id": "31",
+                    "id": "30",
                     "promesa": "Fortaleceremos el Sistema de Alta Dirección Pública, para asegurar que al Estado se acceda por méritos y de manera abierta.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "32",
+                    "id": "31",
                     "promesa": "Mandamos las indicaciones para poder hacer efectivo traspaso de competencias desde el gobierno central a los Gobiernos Regionales.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "3"
                 },
                 {
-                    "id": "33",
+                    "id": "32",
                     "promesa": "Enviamos el proyecto de ley de fortalecimiento municipal, el cual permitirá mejorar la eficiencia de los municipios y hacer más transparente su gestión.",
                     "cumplimiento_total": "90%",
-                    "coherencia_total": "2"
+                    "coherencia_total": "3"
                 },
                 {
-                    "id": "34",
+                    "id": "33",
                     "promesa": "Por eso, ya presentamos en diciembre del año pasado una indicación al proyecto de ley que reforma la ONEMI y crea un nuevo Servicio de Gestión de Riesgos y Emergencias. Y porque debemos avanzar rápido, he renovado la urgencia a la tramitación de esta ley",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
@@ -291,7 +285,7 @@
             "coherencia_total": 4,
             "data": [
                 {
-                    "id": "35",
+                    "id": "34",
                     "promesa": "El Consejo Nacional de la Infancia que hemos constituido, está elaborando la Política Nacional de Niñez y Adolescencia, y el Proyecto de Ley de Garantía de los Derechos de los Niños, Niñas y Adolescentes que será enviado a este Congreso durante este año.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
@@ -302,58 +296,58 @@
             "id": 12,
             "category": "Justicia y DDHH",
             "cumplimiento_total": 51.111111111111114,
-            "coherencia_total": 3.4444444444444446,
+            "coherencia_total": 3.111111111111111,
             "data": [
                 {
-                    "id": "36",
+                    "id": "35",
                     "promesa": "Esperamos que este año se apruebe en la Cámara de Diputados el Proyecto de Ley que crea la Subsecretaría de Derechos Humanos.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "37",
+                    "id": "36",
                     "promesa": "Ingresaremos el Proyecto de Ley que tipifica el delito de tortura en conformidad a los compromisos internacionales.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "38",
+                    "id": "37",
                     "promesa": "Presentaremos además a este Congreso, un proyecto de Reforma Constitucional que crea el cargo de Fiscal Especial de Alta Complejidad en el Ministerio Público\"",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "39",
+                    "id": "38",
                     "promesa": "Impulsaremos la tramitación de los proyectos de ley que garanticen la imprescriptibilidad y el carácter no amnistiable de los delitos de lesa humanidad.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "40",
+                    "id": "39",
                     "promesa": "Nuevo proyecto de Código Penal para poner al día el actual, que se remonta a 1874.",
                     "cumplimiento_total": "0%",
-                    "coherencia_total": "4"
+                    "coherencia_total": "1"
                 },
                 {
-                    "id": "41",
+                    "id": "40",
                     "promesa": "Retomaremos la discusión del Código Procesal Civil, buscando resguardar mejor los derechos de todos los ciudadanos.",
                     "cumplimiento_total": "70%",
                     "coherencia_total": "3"
                 },
                 {
-                    "id": "42",
+                    "id": "41",
                     "promesa": "También para asegurar la defensa de los intereses de los ciudadanos frente a posibles denegaciones de derechos por parte del Estado, crearemos el Defensor Ciudadano.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
                 },
                 {
-                    "id": "43",
+                    "id": "42",
                     "promesa": "Hemos enviado indicaciones al proyecto de ley que Fortalece el Ministerio Público, para incrementar su dotación a 577 funcionarios.",
                     "cumplimiento_total": "100%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "44",
+                    "id": "43",
                     "promesa": "Estamos trabajando en las indicaciones al proyecto de ley de Identidad de Género.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "3"
@@ -367,13 +361,13 @@
             "coherencia_total": 3,
             "data": [
                 {
-                    "id": "45",
+                    "id": "44",
                     "promesa": "Cumplimos con presentar el proyecto de ley que creará el Servicio de Biodiversidad y Áreas Protegidas y el Sistema Nacional de Áreas Protegidas.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
                 },
                 {
-                    "id": "46",
+                    "id": "45",
                     "promesa": "Esto incluye la protección de glaciares, y ya iniciamos la discusión de indicaciones a la moción parlamentaria que trata esta materia.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "2"
@@ -387,7 +381,7 @@
             "coherencia_total": 1,
             "data": [
                 {
-                    "id": "47",
+                    "id": "46",
                     "promesa": "Seguiremos perfeccionando el sistema de concesiones mineras para fomentar la entrada de nuevos actores e inyectar mayor dinamismo.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
@@ -401,7 +395,7 @@
             "coherencia_total": 4,
             "data": [
                 {
-                    "id": "48",
+                    "id": "47",
                     "promesa": "Crearemos una nueva Dirección General de Concesiones con más recursos y capacidades de gestión.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
@@ -411,17 +405,17 @@
         {
             "id": 16,
             "category": "Pueblos originarios",
-            "cumplimiento_total": 40,
-            "coherencia_total": 4,
+            "cumplimiento_total": 20,
+            "coherencia_total": 2.5,
             "data": [
                 {
-                    "id": "49",
+                    "id": "48",
                     "promesa": "Llevamos a cabo diferentes procesos de consulta previa, siendo especialmente relevante el que crea el Ministerio de Pueblos Indígenas. ",
-                    "cumplimiento_total": "40%",
-                    "coherencia_total": "4"
+                    "cumplimiento_total": "0%",
+                    "coherencia_total": "1"
                 },
                 {
-                    "id": "50",
+                    "id": "49",
                     "promesa": "Llevamos a cabo diferentes procesos de consulta previa, siendo especialmente relevante el que crea el Consejo de Pueblos Indígenas.",
                     "cumplimiento_total": "40%",
                     "coherencia_total": "4"
@@ -435,7 +429,7 @@
             "coherencia_total": 1,
             "data": [
                 {
-                    "id": "51",
+                    "id": "50",
                     "promesa": "El derecho a la salud es un derecho universal, por eso durante este año propondremos a consideración de este Congreso Nacional un proyecto de ley mejor y más equitativo que perfeccione el sistema de seguro privado.",
                     "cumplimiento_total": "0%",
                     "coherencia_total": "1"
@@ -445,14 +439,20 @@
         {
             "id": 18,
             "category": "Trabajo y Previsión Social",
-            "cumplimiento_total": 97.5,
-            "coherencia_total": 3.75,
+            "cumplimiento_total": 78,
+            "coherencia_total": 3,
             "data": [
+                {
+                    "id": "51",
+                    "promesa": "Ingresaremos en septiembre al Congreso el esperado Estatuto que regula el trabajo de temporeros y temporeras, para asegurar su protección y la calidad del empleo.",
+                    "cumplimiento_total": "0%",
+                    "coherencia_total": "1"
+                },
                 {
                     "id": "52",
                     "promesa": "Hemos ingresado al Congreso el anhelado proyecto de ley que moderniza las relaciones laborales , y contamos con que la ley esté aprobada en el segundo semestre de este año, porque es tiempo de ponernos al día y asegurar el pleno ejercicio de los derechos colectivos del trabajo.",
                     "cumplimiento_total": "90%",
-                    "coherencia_total": "3"
+                    "coherencia_total": "2"
                 },
                 {
                     "id": "53",
