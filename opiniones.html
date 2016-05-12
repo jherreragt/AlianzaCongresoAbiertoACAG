@@ -3,12 +3,13 @@ layout: default
 ---
 
 <div class="container">
+
   <section id="opiniones">
     <div class="row">
     {% for o in site.data.opiniones.data %}
       {% assign cnt = forloop.index | modulo: 2 %}
       <div class="col-sm-6 col-md-6">
-        {% if o.img == empty %}<h2>Opiniones</h2>{% endif %}
+        {% if o.img == empty %}<h1>Opiniones</h1>{% endif %}
         {% if o.img != empty %}<div><img src="{{o.img}}" alt="" class="img-responsive"></div>{% endif %}
         <p>{{o.txt}}</p>
       </div>
