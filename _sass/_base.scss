@@ -208,7 +208,10 @@ section {
 
 
 h2 {
-  color: $blue;
+  color: $red;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 h4 {
@@ -250,9 +253,9 @@ small {
 
 #welcome {
     background-position: center;
-    background-position-y: -240px;
+    /*background-position-y: -240px;*/
     background-repeat: no-repeat;
-    max-height: 780px;
+    min-height: 780px;
     background-image: url(../img/header.png);
 }
 
@@ -267,7 +270,9 @@ small {
 
 .jumbotron h1 {
   color: white;
+  font-weight:700;
   font-size: 50px;
+  margin-top:150px;
 }
 
 .jumbotron p {
@@ -275,7 +280,7 @@ small {
   font-size: 18px;
   line-height: 1.3;
   margin-bottom: 80px;
-  font-weight: 400;
+  font-weight: 600;
 }
 li.redes {
     position: relative;
@@ -356,6 +361,20 @@ p.text-center.note{
     font-size: 9px;
     font-weight: 600;
 }
+
+/**
+ * Countdown
+ */
+ .image-countdown{
+    background-image: url(../img/header2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 780px;
+    margin-bottom:-230px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+ }
 
 /**
  * Buttons
