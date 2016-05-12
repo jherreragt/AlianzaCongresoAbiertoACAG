@@ -361,6 +361,16 @@ p.text-center.note{
     font-size: 9px;
     font-weight: 600;
 }
+.opiniones-home{
+  background-color: $blue;
+  min-height: 150px;
+  color: white;
+  font-size: 18px;
+  margin: {
+  top: -120px;
+  bottom: 70px;
+  }
+}
 
 /**
  * Countdown
