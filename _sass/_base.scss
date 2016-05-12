@@ -209,8 +209,8 @@ section {
 
 h2 {
   color: $red;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -302,7 +302,11 @@ p.donut{
     color: $blue-dark;
   }
 }
-
+p.porcent-home{
+  font-size: 30px;
+  font-weight: 700;
+  text-align:center;
+}
 p.text-center.note{
   color: $grey;
   font-weight: 600;
@@ -371,6 +375,9 @@ p.text-center.note{
   bottom: 70px;
   }
 }
+.opiniones-home p{
+  margin-top:30px;
+}
 
 /**
  * Countdown
@@ -411,7 +418,8 @@ p.text-center.note{
 
 
 .btn-default {
-  background: #f57c5d;
+  background: $cian;
+  /*
   background: -moz-linear-gradient(-45deg,  #f57c5d 0%, #fb9a5b 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f57c5d), color-stop(100%,#fb9a5b));
   background: -webkit-linear-gradient(-45deg,  #f57c5d 0%,#fb9a5b 100%);
@@ -419,17 +427,19 @@ p.text-center.note{
   background: -ms-linear-gradient(-45deg,  #f57c5d 0%,#fb9a5b 100%);
   background: linear-gradient(135deg,  #f57c5d 0%,#fb9a5b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f57c5d', endColorstr='#fb9a5b',GradientType=1 );
+  */
 }
 
 .btn-default:hover {
-  background: #fb9a5b;
+  background: #blue;
+  /*
   background: -moz-linear-gradient(-45deg,  #fb9a5b 0%, #f9b542 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fb9a5b), color-stop(100%,#f9b542));
   background: -webkit-linear-gradient(-45deg,  #fb9a5b 0%,#f9b542 100%);
   background: -o-linear-gradient(-45deg,  #fb9a5b 0%,#f9b542 100%);
   background: -ms-linear-gradient(-45deg,  #fb9a5b 0%,#f9b542 100%);
   background: linear-gradient(135deg,  #fb9a5b 0%,#f9b542 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb9a5b', endColorstr='#f9b542',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb9a5b', endColorstr='#f9b542',GradientType=1 );*/
 }
 
 .btn-primary {
@@ -442,11 +452,11 @@ p.text-center.note{
 }
 
 .btn-info {
-  background: $orange;
+  background: $cian;
 }
 
 .btn-info:hover{
-  background: $yellow;
+  background: $blue;
 }
 
 .btn-group-lg>.btn, .btn-lg {

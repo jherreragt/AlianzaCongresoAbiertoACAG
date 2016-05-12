@@ -41,7 +41,7 @@
     <div class="col-md-3">
       <div class="chart-{{ x }}"></div>
       <h2>{{c.area}}</h2>
-      <p>{{c.total}}</p>
+      <p class="porcent-home">{{c.total}}</p>
       <script>
       new Chartist.Pie('.chart-{{ x }}', {
           series: [{{c.total | remove: '%' }}, 100]
