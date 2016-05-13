@@ -205,7 +205,9 @@ section {
 /**
  * Headings
  */
-
+h1{
+  font-weight:600;
+}
 
 h2 {
   color: $red;
@@ -229,7 +231,7 @@ h5 {
 }
 
 .destacado {
-  font-size: 14px;
+  font-size: 16px;
   color: $blue;
   margin-bottom: 20px;
   font-weight: 400;
@@ -702,6 +704,31 @@ i.fa.fa-link{
   max-width: 250px;
 }
 
+.box-blue{
+  background: $blue;
+  color: #fff;
+  height: 100%;
+  position:relative;
+  right: 0px;
+  top: 0px;
+  padding:50px;
+}
+.box-blue img {
+  margin-bottom:30px;
+  float:center;
+}
+
+.no-mt {
+  margin-top:-19px;
+}
+.mg-text{
+  padding: {
+  left:40px;
+  right: 40px;
+  top: 80px;
+  }
+}
+
 /*VISUALIZACIONES*/
 #visualizations h1{
   margin-top: 70px;
@@ -720,7 +747,7 @@ i.fa.fa-link{
 footer {
   background: $blue-dark;
   color: white;
-  margin-top: 140px;
+  /*margin-top: 140px;*/
   padding: 75px 0 50px;
   position: relative;
 }
