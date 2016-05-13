@@ -14,7 +14,7 @@
           <p class="textototal">Del total de las propuestas</p>
         </div>
         <div class="hidden col-md-2">
-            <div class="text-center ct-label">{{ site.final_mark }}</div>
+          <div class="text-center ct-label">{{ site.final_mark }}</div>
           <p class="notatotal">Nota de calidad</p>
         </div>
       </div>
@@ -46,26 +46,25 @@
              </a>
            </li>
          </ul>
-       </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
 
-  <div class="opiniones-home">
-      <div class="row">
-      <div class="col-md-12">
+<div class="opiniones-home">
+  <div class="row">
+    <div class="col-md-12">
       <p class="text-center">Acá van las opiniones</p>
-      <p class="text-center text-muted">Nombre organización</h5>
-      </div>
-      </div>
+      <p class="text-center text-muted">Nombre organización</p>
     </div>
-
+  </div>
 </div>
 
 <div class="container">
-<h2 class="home-graphic">Balance de cumplimiento de promesas</h2>
-<h1 class="home-graphic1 text-center">21 de Mayo 2015</h1>
+  <h2 class="home-graphic">Balance de cumplimiento de promesas</h2>
+  <h1 class="home-graphic1 text-center">21 de Mayo 2015</h1>
   <div class="row">
     {% assign x = 1 %}
     {% for c in site.data.cumplimientos %}
@@ -73,7 +72,8 @@
       <div class="chart-{{ x }}"></div>
       <h2>{{c.area}}</h2>
       <p class="porcent-home">{{c.total}}</p>
-      <p class="escala-home">{{c.escala}}</p>
+      <p class="txt-coherencia">Escala de coherencia</p>
+      <p class="escala-home">{{c.escala}} de 4</p>
       <script>
       new Chartist.Pie('.chart-{{ x }}', {
           series: [{{c.total | remove: '%' }}, 100]
