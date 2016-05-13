@@ -390,6 +390,61 @@ font-weight:700;
 margin-bottom:40px;
 
 }
+/*Opiniones */
+
+.row_height {
+  height: 300px;
+}
+
+#opiniones{
+  margin-top:90px;
+}
+
+.image-center {
+  margin: {
+  left: auto;
+  right: auto;
+  }
+  padding:{
+  top:20px;
+  bottom:20px;
+  }
+}
+
+.p-opiniones {
+  padding-bottom:20px;
+  color: white;
+  text-align:center;
+
+}
+.primer_p {
+  padding-bottom:20px;
+  color: $blue;
+}
+
+.color_1{
+  background-color: white;
+  color:  $blue;
+}
+.color_2{
+  background-color: $blue;
+}
+.color_3{
+  background-color: $cian;
+}
+.color_4{
+  background-color: $red;
+}
+.color_5{
+  background-color: $blue;
+}
+.color_6{
+  background-color: $cian;
+}
+.color_7{
+  background-color: $red;
+}
+
 
 /**
  * Countdown
@@ -791,3 +846,15 @@ footer .col-md-4{
     }
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 764px) {
+.dataviz.tablet, .dataviz.desktop {
+display: none;}}
+
+@media only screen and (min-width: 765px) and (max-width: 899px) {
+.dataviz.mobile, .dataviz.desktop {
+display: none;}}
+
+@media only screen and (min-width: 900px) {
+.dataviz.mobile, .dataviz.tablet {
+display: none;}}
