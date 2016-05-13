@@ -848,13 +848,13 @@ footer .col-md-4{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 764px) {
-.dataviz.tablet, .dataviz.desktop {
+.dataviz-tablet, .dataviz-desktop {
 display: none;}}
 
 @media only screen and (min-width: 765px) and (max-width: 899px) {
-.dataviz.mobile, .dataviz.desktop {
+.dataviz-mobile, .dataviz-desktop {
 display: none;}}
 
 @media only screen and (min-width: 900px) {
-.dataviz.mobile, .dataviz.tablet {
+.dataviz-mobile, .dataviz-tablet {
 display: none;}}
