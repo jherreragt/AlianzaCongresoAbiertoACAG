@@ -53,12 +53,24 @@
   </div>
 </div>
 
-<div class="opiniones-home">
-  <div class="row">
-    <div class="col-md-12">
-      <p class="text-center">Acá van las opiniones</p>
+<div id="opiniones" class="opiniones-home carousel" data-ride="carousel">
+  <div class="row carousel-inner" role="listbox">
+    {% assign y = 0 %}
+    {% for opinion in site.data.opiniones.data %}
+    <div class="col-md-12 item {% if y == 0 %}active{% endif %}">
+      <p class="text-center">{{opinion.txt}}</p>
+      <p class="text-center text-muted">{{opinion.nombre_org}}</p>
+    </div>
+    {% assign y = y | plus :1 %}
+    {% endfor %}
+    <!-- <div class="col-md-12 item">
+      <p class="text-center">1 Acá van las opiniones</p>
       <p class="text-center text-muted">Nombre organización</p>
     </div>
+    <div class="col-md-12 item">
+      <p class="text-center">3 Acá van las opiniones</p>
+      <p class="text-center text-muted">Nombre organización</p>
+    </div> -->
   </div>
 </div>
 
@@ -87,6 +99,7 @@
       </script>
     </div>
       {% assign x = x | plus :1 %}
+
     {% endfor %}
   </div>
 </div>
