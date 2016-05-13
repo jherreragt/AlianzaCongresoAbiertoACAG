@@ -1,11 +1,16 @@
 ---
 layout: page
 ---
+<style type="text/css">
+footer {
+  margin-top:0;
+}  
+</style>
 
 <div class="container-fluid">
   <section id="nosotros">
     <div id="content" class="row no-mt">
-      <div class="col-md-8 col-sm-12 mg-text">
+      <div class="col-md-8 col-sm-12 mg-text igualar">
         <h1>¿Qué es Del Dicho al Hecho?</h1>
         <p class="destacado">Del Dicho al Hecho es una herramienta que surge desde Ciudadano Inteligente con el fin de medir el nivel de cumplimiento de las promesas legislativas presidenciales contenidas en los programas de gobiernos dados a conocer a la ciudadanía durante la campaña electoral y en los discursos de 21 de mayo que dan las autoridades electas.</p>
         <p class="destacado">Desde ahí es que surge Del Dicho al Hecho, cuyo objetivo es hacer evidente este derecho de la ciudadanía a exigir dicha rendición, acceder a la información pública pertinente y ejercer las acciones de todo tipo para hacer valer la responsabilidad de los representantes.</p>
@@ -16,7 +21,7 @@ layout: page
     </div>
       </div>
 
-      <div  class="col-md-4 col-sm-12 box-blue">
+      <div  class="col-md-4 col-sm-12 box-blue igualar">
       <a href="//ciudadanointeligente.org" target="_blank" class="text-center"><img src="{{ site.baseurl }}img/logo-ciudadanoi.png" title="Fundación Ciudadano Inteligente"></a>
        <p>Esta iniciativa se enmarca en dos de los pilares de Ciudadano Inteligente para fortalecer la democracia: el ejercicio de la ciudadanía y exigir rendición de cuentas, que es un derecho ciudadano y un deber de los representantes. Para esto es necesario que se cuente con los instrumentos adecuados que permitan a la ciudadanía, prensa y tomadores de decisión informarse de forma detallada, sencilla y pertinente.</p> 
       </div>
@@ -25,10 +30,16 @@ layout: page
     
   </section>
 
-  <section>
-    <div class="row">
-      
-    </div>
-  </section>
 
 </div>
+<script>
+$(document).ready(function() {
+    var heights = $(".igualar").map(function() {
+        return $(this).height();
+    }).get(),
+ 
+    maxHeight = Math.max.apply(null, heights);
+ 
+    $(".igualar").height(maxHeight);
+});
+</script>
