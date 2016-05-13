@@ -184,6 +184,12 @@ section {
     font-size: 9px;
     font-weight: 600;
 }
+/*METODOLOGIA*/
+ol li {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight:600;
+}
 
 /*cumplimientos*/
 .fulfillment {
@@ -207,12 +213,14 @@ section {
  */
 h1{
   font-weight:600;
+  color: $red;
 }
 
 h2 {
   color: $red;
   font-size: 16px;
   font-weight: 700;
+  text-align:center;
 }
 
 h4 {
@@ -371,6 +379,7 @@ p.text-center.note{
   color: $blue;
   font-size:30px;
   margin-top:-40px;
+  text-align:center;
 
 }
 .home-graphic1 {
@@ -716,6 +725,10 @@ i.fa.fa-link{
 .box-blue img {
   margin-bottom:30px;
   float:center;
+}
+.box-blue p{
+  font-weight:600;
+  line-height:25px;
 }
 
 .no-mt {
