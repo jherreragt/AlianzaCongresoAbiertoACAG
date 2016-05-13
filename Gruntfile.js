@@ -73,11 +73,11 @@ module.exports = function(grunt) {
         var cumplimientos = []
 
         for (var i=0; i < all_cumplimientos.length; i++){
-          if( all_cumplimientos[i].area !== null || all_cumplimientos[i].area !== "Promedio/Total" ) {
+          if( all_cumplimientos[i].area !== 'TOTAL' ) {
             cumplimientos.push({
               "area": all_cumplimientos[i].area,
               "total": all_cumplimientos[i].total,
-              "escala": all_cumplimientos[i].escala
+              "nota": all_cumplimientos[i].nota
             })
           }
         }
