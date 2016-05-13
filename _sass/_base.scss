@@ -378,6 +378,18 @@ p.text-center.note{
 .opiniones-home p{
   margin-top:30px;
 }
+.home-graphic {
+  color: $blue;
+  font-size:30px;
+  margin-top:-40px;
+  
+}
+.home-graphic1 {
+font-size:48px;
+font-weight:700;
+margin-bottom:40px;
+  
+}
 
 /**
  * Countdown
@@ -712,6 +724,12 @@ background-color: rgba(255, 255, 255, 0.7);
   background: linear-gradient(135deg,  #fb9a5b 0%,#f9b542 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb9a5b', endColorstr='#f9b542',GradientType=1 );
 }
+
+/*METODOLOGIA*/
+ol li {
+  margin-bottom:10px;
+}
+
 
 /*CUMPLIMIENTO*/
 
