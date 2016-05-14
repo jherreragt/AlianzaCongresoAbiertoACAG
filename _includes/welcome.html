@@ -70,15 +70,16 @@
 <div class="container">
   <h2 class="home-graphic">Balance de cumplimiento de promesas</h2>
   <h1 class="home-graphic1 text-center">21 de Mayo 2015</h1>
+  
   <div class="row">
     {% assign x = 1 %}
     {% for c in site.data.cumplimientos %}
     <div class="col-md-3">
-      <div class="chart-{{ x }}"></div>
-      <h2>{{c.area}}</h2>
+    <h2 class="text-center tit-gra-home">{{c.area}}</h2>
+      <div class="chart-{{ x }}"></div>      
       <p class="porcent-home">{{c.total}}</p>
-      <p class="txt-coherencia">Escala de coherencia</p>
-      <p class="escala-home">{{c.escala}} de 4</p>
+      <p class="text-center txt-coherencia">Escala de coherencia</p>
+      <p class="text-center escala-home">{{c.escala}} de 4</p>
       <script>
       new Chartist.Pie('.chart-{{ x }}', {
           series: [{{c.total | remove: '%' }}, 100]
