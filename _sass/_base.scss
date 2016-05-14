@@ -235,9 +235,9 @@ h5 {
 
 .bajada {
   font-size: 16px;
-  color: $grey;
   max-width: 800px;
   margin: 0 auto 60px;
+  color: $blue;  
 }
 
 .destacado {
@@ -245,6 +245,7 @@ h5 {
   color: $blue;
   margin-bottom: 20px;
   font-weight: 400;
+  max-width: 800px;
 }
 
 .small {
@@ -449,6 +450,9 @@ margin-bottom:40px;
 .primer_p {
   padding-bottom:20px;
   color: $blue;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .color_1{
