@@ -628,6 +628,7 @@ h5 {
   font-weight: 700;
   margin-left: 5px;
   margin-top: 8px;
+  color: $blue;
 }
 
 .percentage {
@@ -677,6 +678,9 @@ i.fa.fa-link{
   .panel-body{
     padding: 0;
     background-color: #F7F7F7;
+  }
+  .panel-title{
+    color: #C52727;
   }
 }
 

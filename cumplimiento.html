@@ -12,10 +12,10 @@ layout: page
         <div class="hidden-xs col-sm-3 col-md-4">
           <h4>Categorías</h4>
         </div>
-        <div class="hidden-xs col-sm-5 col-md-6">
+        <div class="hidden-xs col-sm-5 col-md-6 text-center">
           <h4>Porcentaje de avance</h4>
         </div>
-        <div class="hidden-xs col-sm-4 col-md-2">
+        <div class="hidden-xs col-sm-4 col-md-2 text-center">
           <h4>Escala de coherencia </h4>
           <h5>(1 a 4)</h5>
         </div>
@@ -67,17 +67,17 @@ layout: page
                   <thead>
                     <tr>
                       <th>Promesa</th>
-                      <th>Porcentaje de avance</th>
-                      <th>Escala de coherencia (1 a 4)</th>
+                      <th class="text-center">Porcentaje de avance</th>
+                      <th class="text-center">Escala de coherencia (1 a 4)</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr ng-repeat="data in p.data">
                       <td>[[data.promesa]]</td>
                       <td>
-                        <p>[[data.cumplimiento_total]]</p>
-                        <p>de avance</p>
-                        <p><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
+                        <p class="percentage text-center">[[data.cumplimiento_total]]</p>
+                        <p class="text-center">de avance</p>
+                        <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
 
                         <!-- Modal -->
                         <div class="modal fade" id="myModal-cumplimiento-[[p.id]]-[[data.id]]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -97,9 +97,9 @@ layout: page
 
                       </td>
                       <td>
-                        <p>[[data.coherencia_total]]</p>
-                        <p>escala de coherencia</p>
-                        <p><a href="#" data-toggle="modal" data-target="#myModal-coherencia-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
+                        <p class="percentage text-center">[[data.coherencia_total]]</p>
+                        <p class="text-center">escala de coherencia</p>
+                        <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-coherencia-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
 
                         <!-- Modal -->
                         <div class="modal fade" id="myModal-coherencia-[[p.id]]-[[data.id]]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
