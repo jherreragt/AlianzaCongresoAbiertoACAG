@@ -366,16 +366,23 @@ p.text-center.note{
 }
 .opiniones-home{
   background-color: $blue;
-  min-height: 150px;
+  min-height: 170px;
   color: white;
   font-size: 18px;
   margin: {
   top: -120px;
   bottom: 70px;
   }
+  padding: {
+  left:200px;
+  right:200px;
+  }
 }
 .opiniones-home p{
   margin-top:30px;
+}
+.text-mute{
+  
 }
 .home-graphic {
   color: $blue;
@@ -392,11 +399,12 @@ margin-bottom:40px;
 }
 /*Opiniones */
 
-.row_height {
-  height: 300px;
+#opiniones{
+  margin-top:90px;
 }
-
-
+.row_height {
+  min-height: 300px;
+}
 
 .image-center {
   margin: {
