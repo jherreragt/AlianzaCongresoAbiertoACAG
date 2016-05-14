@@ -381,8 +381,13 @@ p.text-center.note{
 .opiniones-home p{
   margin-top:30px;
 }
-.text-mute{
-  
+#opiniones-slider {
+  min-height: 200px;
+}
+.text-muted{
+  color:white;
+  font-size:12px;
+  font-weight: 600;
 }
 .home-graphic {
   color: $blue;
