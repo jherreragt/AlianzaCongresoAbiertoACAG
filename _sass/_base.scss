@@ -675,15 +675,27 @@ i.fa.fa-link{
 }
 
 #fulfillment{
+  .panel-default > .panel-heading{
+    background-color: #F7F7F7;
+  }
+  .panel{
+    -webkit-box-shadow: none;
+  }
   .panel-body{
     padding: 0;
-    background-color: #F7F7F7;
+    background-color: white;
   }
   .panel-title{
     color: #C52727;
   }
+  .panel-default{
+    border-color: #F7F7F7;
+  }
 }
 
+.table>thead>tr>th{
+  border-bottom: none;
+}
 .panel-default>.panel-heading {
     color: $grey;
     background-color: $grey-lighter;
