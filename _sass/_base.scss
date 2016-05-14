@@ -625,7 +625,7 @@ h5 {
 
 .category-percentage {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 700;
   margin-left: 5px;
   margin-top: 8px;
 }
@@ -643,7 +643,7 @@ h5 {
 }
 
 .progress {
-  height: 15px;
+  height: 20px;
   margin: 7px 0 0;
   background-color: #FFFFFF;
   border-radius: 15px;
@@ -654,7 +654,7 @@ h5 {
 }
 
 .progress-bar {
-  background-color: $blue-light;
+  background-color: $blue;
   border-radius: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -671,6 +671,13 @@ i.fa.fa-info-circle:hover{
 
 i.fa.fa-link{
   margin:20px 3px 3px 3px;
+}
+
+#fulfillment{
+  .panel-body{
+    padding: 0;
+    background-color: #F7F7F7;
+  }
 }
 
 .panel-default>.panel-heading {
