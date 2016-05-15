@@ -237,7 +237,7 @@ h5 {
   font-size: 16px;
   max-width: 800px;
   margin: 0 auto 60px;
-  color: $blue;  
+  color: $blue;
 }
 
 .destacado {
@@ -446,54 +446,78 @@ margin-bottom:40px;
   }
 }
 
-.p-opiniones {
+@mixin opiniones {
   padding-bottom:20px;
   color: white;
   text-align:center;
   font-size: 14px;
   font-weight:600;
   padding:{
-  left:40px;
-  right:40px;
+    left:40px;
+    right:40px;
+  }
+}
+
+
+#opiniones {
+  .row:nth-child(1) {
+    div.col-md-6:nth-child(1){
+      background-color: white;
+      color:  $blue;
+      p {
+        padding-bottom:20px;
+        color: $blue;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+    }
+    div.col-md-6:nth-child(2){
+      background-color: $blue;
+      p {
+        @include opiniones;
+      }
+    }
   }
 
-}
-.primer_p {
-  padding-bottom:20px;
-  color: $blue;
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
+  .row:nth-child(2) {
+    div.col-md-6:nth-child(1){
+      background-color: $cian;
+      p {
+        @include opiniones;
+      }
+    }
+    div.col-md-6:nth-child(2){
+      background-color: $red;
+      p {
+        @include opiniones;
+      }
+    }
+  }
 
-.color_1{
-  background-color: white;
-  color:  $blue;
-}
-.color_2{
-  background-color: $blue;
-}
-.color_3{
-  background-color: $cian;
-}
-.color_4{
-  background-color: $red;
-}
-.color_5{
-  background-color: $blue;
-}
-.color_6{
-  background-color: $cian;
-}
-.color_7{
-  background-color: $red;
-}
-.row_height h1{
+  .row:nth-child(3) {
+    div.col-md-6:nth-child(1){
+      background-color: $blue;
+      p {
+        @include opiniones;
+      }
+    }
+    div.col-md-6:nth-child(2){
+      background-color: $cian;
+      p {
+        @include opiniones;
+      }
+    }
+  }
 
-
-}
-.row_height p{
-
+  .row:nth-child(4) {
+    div.col-md-6:nth-child(1){
+      background-color: $red;
+      p {
+        @include opiniones;
+      }
+    }
+  }
 }
 
 /**
@@ -955,23 +979,25 @@ display: none;}
 }
 
 @media only screen and (min-width: 900px) and (max-width: 999px) {
-.dataviz-mobile, .dataviz-tablet {
-display: none;}
-#opiniones{
-  margin-top:130px;
-}
-.row_height {
-  min-height: 300px;
-}
+  .dataviz-mobile, .dataviz-tablet {
+    display: none;
+  }
+  #opiniones{
+    margin-top:130px;
+  }
+  .row_height {
+    min-height: 300px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-.dataviz-mobile, .dataviz-tablet {
-display: none;}
-#opiniones{
-  margin-top:90px;
-}
-.row_height {
-  min-height: 300px;
-}
+  .dataviz-mobile, .dataviz-tablet {
+    display: none;
+  }
+  #opiniones{
+    margin-top:90px;
+  }
+  .row_height {
+    min-height: 300px;
+  }
 }

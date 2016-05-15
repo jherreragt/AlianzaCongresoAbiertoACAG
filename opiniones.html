@@ -4,35 +4,24 @@ layout: default
 <style type="text/css">
 footer {
   margin-top:0;
-}  
+}
 </style>
 
 <div class="container-fluid">
-
   <section id="opiniones" >
     <div class="row row_height">
     {% for o in site.data.opiniones.data %}
       {% assign cnt = forloop.index | modulo: 2 %}
-
-      
-      <div class="col-sm-6 col-md-6 a color_{{ forloop.index }} row_height">
+      <div class="col-sm-6 col-md-6 row_height">
         {% if o.img == empty %}<h1>Opiniones</h1>{% endif %}
         {% if o.img != empty %}<div><img src="{{o.img}}" alt="" class="img-responsive image-center"></div>{% endif %}
-        <p class=" 
-        {% if forloop.index == 1 %}
-        primer_p
-        {% else %}
-        p-opiniones
-        {% endif %}">{{o.txt}}</p>
-
+        <p>{{o.txt}}</p>
       </div>
       {% if cnt == 0 %}
     </div>
-
     <div class="row row_height">
     {% endif %}
-    {% endfor %} 
+    {% endfor %}
     </div>
-
   </section>
 </div>
