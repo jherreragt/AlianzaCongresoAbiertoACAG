@@ -1,20 +1,27 @@
 ---
 layout: default
 ---
+<style type="text/css">
+footer {
+  margin-top:0;
+}
+</style>
 
-<div class="container">
-  <section id="opiniones">
-    <div class="row">
+<div class="container-fluid">
+  <section id="opiniones" >
+    <div class="row row_height">
     {% for o in site.data.opiniones.data %}
       {% assign cnt = forloop.index | modulo: 2 %}
-      <div class="col-sm-6 col-md-6">
-        {% if o.img == empty %}<h2>Opiniones</h2>{% endif %}
-        {% if o.img != empty %}<div><img src="{{o.img}}" alt="" class="img-responsive"></div>{% endif %}
+      <div class="col-sm-6 col-md-6 row_height">
+        {% if o.img == empty %}<h1>Opiniones</h1>{% endif %}
+        {% if o.img != empty %}<div><img src="{{o.img}}" alt="" class="img-responsive image-center"></div>{% endif %}
         <p>{{o.txt}}</p>
       </div>
-      {% if cnt == 0 %}</div><div class="row">{% endif %}
+      {% if cnt == 0 %}
+    </div>
+    <div class="row row_height">
+    {% endif %}
     {% endfor %}
     </div>
-
   </section>
 </div>

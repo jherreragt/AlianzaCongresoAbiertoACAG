@@ -2,39 +2,72 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-
-        <div class="col-md-7">
+        <div class="col-md-12">
           <h1>¡A medirse!</h1>
           <p>Hagamos uso de nuestro derecho de rendición de cuentas <br>
           y midamos el avance legislativo de las promesas enunciadas <br>
           por la Presidenta Bachelet en su discurso del 21 de mayo de 2015.</p>
         </div>
-        <div class="hidden col-md-3 chart-total">
-          <p class="totalbajada">de avance</p>
-          <p class="textototal">Del total de las propuestas</p>
-        </div>
-        <div class="hidden col-md-2">
-            <div class="text-center ct-label">{{ site.final_mark }}</div>
-          <p class="notatotal">Nota de calidad</p>
-        </div>
-
       </div>
-        <div class="row">
-
-
+      <div class="row">
+        <div class="col-xs-4 col-sm-3 col-md-6">
+          <ul class="list-unstyled list-inline">
+            <li>
+              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=http://ciudadanointeligente.org/deldichoalhecho&amp;via=ciudadanoi&amp;hashtags=Midamos&amp;text=¿Cuánto han avanzado las promesas legislativas del 21/05/15? Midamos los avances en http://goo.cl/c2Vzn &quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
+                 <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                 <i class="fa fa-twitter fa-stack-1x"></i>
+               </span>
+             </a>
+            </li>
+            <li>
+              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=http://ciudadanointeligente.org/deldichoalhecho&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
+                <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
+        <div class="col-xs-8 col-sm-9 col-md-6 text-right">
+          <a href="{{ site.baseurl }}cumplimiento.html" class="hidden-xs btn btn-primary btn-lg">Revisa el cumplimiento</a>
+          <a href="{{ site.baseurl }}cumplimiento.html" class="visible-xs btn btn-primary">Revisa el cumplimiento</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+<div id="opiniones-slider" class="opiniones-home carousel" data-ride="carousel">
+  <div class="row carousel-inner response_center_text" role="listbox">
+    {% assign y = 0 %}
+    {% for opinion in site.data.opiniones.data %}
+      {% if y != 0 %}
+    <div class="col-md-12 item  {% if y == 1 %}active{% endif %}">
+      <p class="text-center">{{opinion.txt}}</p>
+      <p class="text-center text-muted">{{opinion.nombre_org}}</p>
+    </div>
+      {% endif %}
+    {% assign y = y | plus :1 %}
+    {% endfor %}
+  </div>
+</div>
+
 <div class="container">
+  <h2 class="home-graphic">Balance de cumplimiento de promesas</h2>
+  <h1 class="home-graphic1 text-center">21 de Mayo 2015</h1>
+
   <div class="row">
     {% assign x = 1 %}
     {% for c in site.data.cumplimientos %}
-    <div class="col-md-3">
+      {% assign cnt = forloop.index | modulo: 4 %}
+    <div class="col-sm-3 col-md-3">
+      <h2 class="text-center tit-gra-home"><a href="/cumplimiento.html">{{c.area}}</a></h2>
       <div class="chart-{{ x }}"></div>
-      <h2>{{c.area}}</h2>
-      <p>{{c.total}}</p>
+      <p class="porcent-home">{{c.total}}</p>
+      <p class="text-center txt-coherencia">Escala de coherencia</p>
+      <p class="text-center escala-home">{{c.escala}} de 4</p>
       <script>
       new Chartist.Pie('.chart-{{ x }}', {
           series: [{{c.total | remove: '%' }}, 100]
@@ -48,6 +81,10 @@
       </script>
     </div>
       {% assign x = x | plus :1 %}
+    {% if cnt == 0 %}
+  </div>
+  <div class="row">
+    {% endif %}
     {% endfor %}
   </div>
 </div>
