@@ -265,7 +265,13 @@ small {
 
 #welcome {
   background-color: $red;
+  background: url(../img/header.png) 60%/auto no-repeat;
   min-height: 600px;
+  .jumbotron>.container {
+      div.row:nth-child(2) {
+        padding-top: 100px;
+      }
+    }
 }
 
 .jumbotron {
