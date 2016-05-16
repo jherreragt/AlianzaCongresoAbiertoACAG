@@ -60,18 +60,30 @@
   </div>
 </div>
 
-<div id="opiniones-slider" class="opiniones-home carousel" data-ride="carousel">
-  <div class="row carousel-inner response_center_text" role="listbox">
-    {% assign y = 0 %}
-    {% for opinion in site.data.opiniones.data %}
-      {% if y != 0 %}
-    <div class="col-md-12 item  {% if y == 1 %}active{% endif %}">
-      <p class="text-center">{{opinion.txt}}</p>
-      <p class="text-center text-muted">{{opinion.nombre_org}}</p>
+<div id="main-opinions">
+  <div class="container">
+    <div id="opiniones-slider" class="opiniones-home carousel" data-ride="carousel" data-interval="15000">
+      <ol class="carousel-indicators">
+        {% assign y = 0 %}
+        {% for opinion in site.data.opiniones.data %}
+        <li data-target="#opiniones-slider" data-slide-to="{{y}}" class="{% if y == 0 %}active{% endif %}"></li>
+        {% assign y = y | plus :1 %}
+        {% endfor %}
+      </ol>
+
+      <div class="row carousel-inner response_center_text" role="listbox">
+        {% assign y = 0 %}
+        {% for opinion in site.data.opiniones.data %}
+          {% if y != 0 %}
+        <div class="col-md-12 item  {% if y == 1 %}active{% endif %}">
+          <p class="text-center"><a href="/opiniones.html">{{opinion.txt}}</a></p>
+          <p class="text-center text-muted">{{opinion.nombre_org}}</p>
+        </div>
+          {% endif %}
+        {% assign y = y | plus :1 %}
+        {% endfor %}
+      </div>
     </div>
-      {% endif %}
-    {% assign y = y | plus :1 %}
-    {% endfor %}
   </div>
 </div>
 
@@ -83,12 +95,13 @@
     {% assign x = 1 %}
     {% for c in site.data.cumplimientos %}
       {% assign cnt = forloop.index | modulo: 4 %}
-    <div class="col-sm-3 col-md-3">
+    <div class="cumplimientos col-sm-3 col-md-3">
       <h2 class="text-center tit-gra-home"><a href="/cumplimiento.html#cumplimiento-{{x}}" onClick="ga('send', 'event', 'home-{{c.area}}', 'click');">{{c.area}}</a></h2>
       <div class="chart-{{ x }}"></div>
       <p class="porcent-home">{{c.total}}</p>
-      <p class="text-center txt-coherencia">Escala de coherencia</p>
+      <p class="text-center txt-coherencia">Coherencia con la promesa</p>
       <p class="text-center escala-home">{{c.escala}} de 4</p>
+      <p class="text-center read-more"><a href="/cumplimiento.html#cumplimiento-{{x}}" onClick="ga('send', 'event', 'home-{{c.area}}-ver-mas', 'click');">ver más</a></p>
       <script>
       new Chartist.Pie('.chart-{{ x }}', {
           series: [{{c.total | remove: '%' }}, 100]
