@@ -38,7 +38,7 @@ layout: page
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
                   <h2 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne-[[p.id]]" aria-expanded="false" aria-controls="collapseOne-[[p.id]]">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-[[p.id]]" aria-expanded="false" aria-controls="cumplimiento-[[p.id]]">
                     <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> [[p.category]]
                     </a>
                   </h2>
@@ -65,8 +65,7 @@ layout: page
                 </div>
               </div>
             </div>
-
-            <div id="collapseOne-[[p.id]]" ng-class='{in:$first}' class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-[[p.id]]">
+            <div id="cumplimiento-[[p.id]]" ng-class='hash === "cumplimiento-"+p.id ? "in" : (hash === "" && $first ? "in" : "")' class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-[[p.id]]">
               <div class="panel-body">
                 <table class="table table-striped">
                   <thead>
