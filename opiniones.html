@@ -8,10 +8,10 @@ footer {
 </style>
 
 <div class="container">
-  <section>
+  <section id="opinion">
       <div class="row">
         <h1 class="text-center">Opiniones</h1>
-      <div class="col-md-12">
+        <div class="col-md-12">
         <p class="bajada">Las promesas legislativas del discurso del 21 de mayo del 2015 abordan distintas áreas y tienen llegada a todos los sectores de la sociedad. Compartimos aquí las opiniones de diferentes organizaciones de la sociedad civil con respecto a algunas de las promesas del último discurso presidencial.</p>
       </div>
       </div>
@@ -19,13 +19,14 @@ footer {
 </div>
 
 <div class="container-fluid">
-  <section id="opiniones" >
+  <section id="opiniones">
     <div class="row row_height">
     {% for o in site.data.opiniones.data %}
       {% assign cnt = forloop.index | modulo: 2 %}
       <div class="col-sm-6 col-md-6 row_height">
-        {% if o.img == empty %}<h1>Opiniones</h1>{% endif %}
-        {% if o.img != empty %}<div><img src="{{o.img}}" alt="" class="img-responsive image-center"></div>{% endif %}
+        <div>
+        <img src="{{o.img}}" alt="" class="img-responsive image-center"></div>
+        <p>{{o.promesa}}</p>
         <p>{{o.txt}}</p>
       </div>
       {% if cnt == 0 %}
