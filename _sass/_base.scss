@@ -23,6 +23,7 @@ a:hover {
 }
 
 section {
+  font-family: 'Open Sans';
     margin: 110px 0 0;
 }
 
@@ -187,7 +188,8 @@ section {
 /*METODOLOGIA*/
 ol li {
   font-size: 16px;
-  line-height: 45px;
+  /*line-height: 35px;*/
+  margin-bottom: 15px;
   font-weight:600;
 }
 #metodologia h1{
@@ -805,6 +807,7 @@ h5 {
 
 #fulfillment .list-inline>li {
   margin-bottom: 5px;
+  margin-left:-8px;
 
 }
  .sec-promesas{
