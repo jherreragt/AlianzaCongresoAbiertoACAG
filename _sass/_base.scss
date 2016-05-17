@@ -553,7 +553,7 @@ margin-bottom:40px;
       p {
         @include tx-opinion;
       }
-      
+
     }
     div.col-md-6:nth-child(2){
       background-color: $cian;
@@ -599,7 +599,7 @@ margin-bottom:40px;
       p {
         @include tx-opinion;
       }
-      
+
     }
     div.col-md-6:nth-child(2){
       background-color: $cian;
@@ -615,7 +615,7 @@ margin-bottom:40px;
       p {
         @include tx-opinion;
       }
-      
+
     }
     div.col-md-6:nth-child(2){
       background-color: $blue;
@@ -631,7 +631,7 @@ margin-bottom:40px;
       p {
         @include tx-opinion;
       }
-      
+
     }
     div.col-md-6:nth-child(2){
       background-color: $red;
@@ -1085,13 +1085,13 @@ footer img {
     h1 {
       margin-top:255px;
     }
-    /*.jumbotron>.container {
-      div.row:nth-child(2) {
-        padding-top: 100px;
+    .jumbotron {
+      h1 {
+        margin-top:165px;
       }
-    }*/
-    .jumbotron a {
-      font-size: initial;
+      a {
+          font-size: initial;
+      }
     }
   }
 
