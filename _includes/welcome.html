@@ -60,32 +60,7 @@
   </div>
 </div>
 
-<div id="main-opinions">
-  <div class="container">
-    <div id="opiniones-slider" class="opiniones-home carousel" data-ride="carousel" data-interval="15000">
-      <ol class="carousel-indicators">
-        {% assign y = 0 %}
-        {% for opinion in site.data.opiniones.data %}
-        <li data-target="#opiniones-slider" data-slide-to="{{y}}" class="{% if y == 0 %}active{% endif %}"></li>
-        {% assign y = y | plus :1 %}
-        {% endfor %}
-      </ol>
-
-      <div class="row carousel-inner response_center_text" role="listbox">
-        {% assign y = 0 %}
-        {% for opinion in site.data.opiniones.data %}
-          {% if y != 0 %}
-        <div class="col-md-12 item  {% if y == 1 %}active{% endif %}">
-          <p class="text-center"><a href="/opiniones.html">{{opinion.txt}}</a></p>
-          <p class="text-center text-muted">{{opinion.nombre_org}}</p>
-        </div>
-          {% endif %}
-        {% assign y = y | plus :1 %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
+{% include opinions.html %}
 
 <div class="container">
   <h2 class="home-graphic">Balance de cumplimiento de promesas</h2>
