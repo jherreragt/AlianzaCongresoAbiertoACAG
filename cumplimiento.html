@@ -43,7 +43,7 @@ layout: page
                     </a>
                   </h2>
                   <div class="sec-promesas">
-                    
+
                     <ul class="list-inline">
                       <li>[[p.data.length]] promesa(s)</li>
                       <li>([[p.status.completas]] completas</li>
@@ -68,75 +68,40 @@ layout: page
             </div>
             <div id="cumplimiento-[[p.id]]" ng-class='hash === "cumplimiento-"+p.id ? "in" : (hash === "" && $first ? "in" : "")' class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-[[p.id]]">
               <div class="panel-body">
-                <table class="table table-striped">
-                  <thead>
-                    <tr class="titulo-tabla">
-                      <th>Promesa</th>
-                      <th class="titulo-tabla text-center">Porcentaje de avance</th>
-                      <th class="text-center">Escala de coherencia (1 a 4)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr ng-repeat="data in p.data">
-                      <td>[[data.promesa]]</td>
-                      <td>
-                        <p class="percentage text-center">[[data.cumplimiento_total]]</p>
-                        <p class="text-center">de avance</p>
-                        <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal-cumplimiento-[[p.id]]-[[data.id]]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">[[data.cumplimiento_total]] de avance - ¿por qué?</h4>
-                              </div>
-                              <div class="modal-body">
-                                [[data.justificacion_avance]]
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-
-                      </td>
-                      <td>
-                        <p class="percentage text-center">[[data.coherencia_total]]</p>
-                        <p class="text-center">escala de coherencia</p>
-                        <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-coherencia-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal-coherencia-[[p.id]]-[[data.id]]" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">[[data.coherencia_total]] escala de coherencia - ¿por qué?</h4>
-                              </div>
-                              <div class="modal-body">
-                                [[data.justificacion_nota]]
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-
-
-
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr class="titulo-tabla">
+                        <th>Promesa</th>
+                        <th class="titulo-tabla text-center">Porcentaje de avance</th>
+                        <th class="text-center">Escala de coherencia (1 a 4)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="data in p.data">
+                        <td style="white-space: initial"><p style="min-width: 200px;">[[data.promesa]]</p></td>
+                        <td>
+                          <p class="percentage text-center">[[data.cumplimiento_total]]</p>
+                          <p class="text-center">de avance</p>
+                          <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
+                        </td>
+                        <td>
+                          <p class="percentage text-center">[[data.coherencia_total]]</p>
+                          <p class="text-center">escala de coherencia</p>
+                          <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-coherencia-[[p.id]]-[[data.id]]">¿Por qué?</a></p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
-
 
       </div>
     </div>
-
+    {% include cumplimiento_modal.html %}
+    {% include coherencia_modal.html %}
   </section>
 </div>
